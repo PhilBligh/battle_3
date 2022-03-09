@@ -7,7 +7,7 @@ class Battle < Sinatra::Base
   end
   
   get '/' do
-    'Hello battle!'
+    'Testing infrastructure working!'
   end
   # our routes would go here
 
