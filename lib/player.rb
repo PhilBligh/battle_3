@@ -3,11 +3,7 @@ class Player
   
   def initialize(name)
     @name = name
-    @hp = 10
-  end
-
-  def attack(player)
-    player.receive_damage
+    @hp = 100
   end
 
   def receive_damage
