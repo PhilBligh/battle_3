@@ -3,7 +3,7 @@ class Player
   
   def initialize(name)
     @name = name
-    @hp = 100
+    @hp = 10
   end
 
   def attack(player)
