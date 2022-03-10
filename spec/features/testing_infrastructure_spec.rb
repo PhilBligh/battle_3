@@ -5,7 +5,7 @@ feature 'Testing players' do
   end
   scenario 'Will hit points after submitting names' do
     sign_in_and_play
-    expect(page).to have_content 'Phil: 100HP'
+    expect(page).to have_content 'Phil HP: 100'
   end
 end
 
@@ -14,5 +14,6 @@ feature 'Attacking' do
     sign_in_and_play
     click_link 'Attack'
     expect(page).to have_content 'James attacked Phil'
+    expect(page).to have_content 'Phil HP: 90'
   end
 end
